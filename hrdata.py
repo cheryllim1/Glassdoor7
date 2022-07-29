@@ -13,10 +13,9 @@ st.sidebar.header('User Input Parameters')
 def user_input_features():
   Sex = st.sidebar.slider('Sex', M, F)
   Termd = st.sidebar.slider('Termd', 0, 1)
-   data = {'Sex': Sex,
-            'Termd': Termd}
-    features = pd.DataFrame(data, index=[0])
-    return features
+  data = {'Sex': Sex,'Termd': Termd}
+  features = pd.DataFrame(data, index=[0])
+  return features
 
 df = user_input_features()
 
